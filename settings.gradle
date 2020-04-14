@@ -1,0 +1,2 @@
+rootProject.name='akyzsoft'
+include ':app'

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="start_btn" type="id" />
+    <item name="rank_Btn" type="id" />
+
+    <item name="btn_num11" type="id" />
+    <item name="name1" type="id" />
+    <item name="name2" type="id" />
+    <item name="name3" type="id" />
+    <item name="time3" type="id" />
+    <item name="name4" type="id" />
+    <item name="name5" type="id" />
+    <item name="time5" type="id" />
+    <item name="time4" type="id" />
+    <item name="time2" type="id" />
+    <item name="time1" type="id" />
+</resources>

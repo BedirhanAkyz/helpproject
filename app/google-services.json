@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1085388310608",
+    "firebase_url": "https://akyzsoft-5fe80.firebaseio.com",
+    "project_id": "akyzsoft-5fe80",
+    "storage_bucket": "akyzsoft-5fe80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085388310608:android:47371669c703b5fa8c2955",
+        "android_client_info": {
+          "package_name": "com.example.akyzsoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085388310608-qm5cp9pf7ukc9mvsh0lgpl2mohchjn89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN7_-bfroGV7pnUBZj1fkhoNrxu1zBR8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085388310608-qm5cp9pf7ukc9mvsh0lgpl2mohchjn89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
