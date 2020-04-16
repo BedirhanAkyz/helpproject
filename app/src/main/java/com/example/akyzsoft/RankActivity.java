@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.akyuzsoft.R;
+
 public class RankActivity extends AppCompatActivity {
     SQLiteDatabase database;
     MyDatabaseOpenHelper helper;

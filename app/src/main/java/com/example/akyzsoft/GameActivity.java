@@ -8,7 +8,10 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.akyuzsoft.R;
 
 import java.util.Random;
 

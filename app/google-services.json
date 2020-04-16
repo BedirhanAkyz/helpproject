@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:1085388310608:android:e84cb7157103c0508c2955",
+        "android_client_info": {
+          "package_name": "akyzsoft.onetofifty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085388310608-qm5cp9pf7ukc9mvsh0lgpl2mohchjn89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN7_-bfroGV7pnUBZj1fkhoNrxu1zBR8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085388310608-qm5cp9pf7ukc9mvsh0lgpl2mohchjn89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:1085388310608:android:47371669c703b5fa8c2955",
         "android_client_info": {
           "package_name": "com.example.akyzsoft"

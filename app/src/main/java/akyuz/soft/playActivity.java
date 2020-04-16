@@ -22,14 +22,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.akyzsoft.R;
-//import com.google.firebase.database.DatabaseReference;
-//import com.google.firebase.database.FirebaseDatabase;
-
+import com.example.akyuzsoft.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 
 public class playActivity extends Activity {
-
+    private AdView mAdView;
     private int checkNum = 1;
     private TextView mCountDown;
     private int count = 3;
@@ -44,8 +45,8 @@ public class playActivity extends Activity {
             0);
     private int soundID3, soundID4;
 
-    //private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-    //private DatabaseReference databaseReference = firebaseDatabase.getReference();
+    private FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = firebaseDatabase.getReference();
     private String record;
 
     @Override
@@ -54,12 +55,12 @@ public class playActivity extends Activity {
         Window win = getWindow();
         win.setContentView(R.layout.activity_play);
 
-        //AdMob ekle
-        //AdView mAdView = findViewById(R.id.adView);
-        //AdRequest adRequest = new AdRequest.Builder().build();
-        //mAdView.loadAd(adRequest);
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
-        //MobileAds.initialize(getApplicationContext());
+
+
 
 
         final int soundID = sp.load(this,

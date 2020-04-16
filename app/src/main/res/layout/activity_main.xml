@@ -4,9 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/tools"
     android:theme="@style/Theme.AppCompat.NoActionBar"
     android:background="#EAEAEA"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo"
@@ -35,5 +36,13 @@
         android:layout_height="44dp"
         android:background="@drawable/back"
         android:text="QUİT" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="258dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
 
 </LinearLayout>

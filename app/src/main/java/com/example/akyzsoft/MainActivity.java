@@ -1,13 +1,17 @@
 package com.example.akyzsoft;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.akyuzsoft.R;
+
+@SuppressLint("Registered")
 public class MainActivity extends AppCompatActivity {
 
     MyDatabaseOpenHelper helper;
@@ -25,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        Button startBtn = (Button)findViewById(R.id.start_btn);
-        Button rankBtn = (Button)findViewById(R.id.start_btn);
+        @SuppressLint("CutPasteId") Button startBtn = (Button)findViewById(R.id.start_btn);
+        @SuppressLint("CutPasteId") Button rankBtn = (Button)findViewById(R.id.start_btn);
         startBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(MainActivity.this, GameActivity.class);

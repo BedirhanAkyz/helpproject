@@ -15,4 +15,5 @@
     <item name="time4" type="id" />
     <item name="time2" type="id" />
     <item name="time1" type="id" />
+    <item name="adView" type="id" />
 </resources>

@@ -1,15 +1,15 @@
 package akyuz.soft;
 
 
-
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.akyzsoft.R;
+import com.example.akyuzsoft.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,12 +25,16 @@ public class rankActivity extends Activity {
    private DatabaseReference databaseReference = firebaseDatabase.getReference("users");
     private ArrayList<String> list = new ArrayList<>();
     private int count = 0;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rank);
 
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         databaseReference.orderByChild("record").limitToFirst(10).addChildEventListener(new ChildEventListener() {
             @Override
